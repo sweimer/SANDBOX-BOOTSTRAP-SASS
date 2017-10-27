@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="dist/css/styles.min.css">
   </head>
+
   <body class="homepage">
     <!-- TOP NAV-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -42,79 +43,176 @@
         </div>
     </nav>
 
-    <section id="mainWrapper" class="container" role="main" style="margin-top:50px;">
+    <section id="mainWrapper" class="" role="main" style="margin-top:50px;">
       <h1>Bootstrap-SASS Styleguide</h1>
 
-      <!-- #NAVBAR
-      ================================================== -->
-      <div class="clearfix">
-        <!-- #NAV - PILLS -->
-        <div class="row">
-          <div class="col-lg-6">
-            <h2 id="nav-pills">Pills</h2>
-            <div class="bs-component">
-              <ul class="nav nav-pills">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li class="disabled"><a href="#">Disabled</a></li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    Dropdown <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
+      <!-- COLORS -->
+      <article id="article-colors" class="sg-container">
+        <div class="sg-info">
+          <div class="sg-colors sg-section">
+            <h2 id="sg-colors" class="sg-h2">Colors</h2>
+
+            <h3>Basics</h3>
+            <div class="sg-color-grid">
+              <div class="sg-color">
+                <div class="sg-color-swatch color-black"></div>
+                <div class="sg-color-name">$black</div>
+                <div class="sg-color-value">#000000</div>
+                <div>(.color-black)</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch color-white border-1px"></div>
+                <div class="sg-color-name">$white</div>
+                <div class="sg-color-value">#ffffff</div>
+                <div>(.color-white)</div>
+              </div>
             </div>
-            <br>
-            <div class="bs-component">
-              <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Profile</a></li>
-                <li class="disabled"><a href="#">Disabled</a></li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                    Dropdown <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
+
+            <h3>Primaries</h3>
+            <div class="sg-color-grid">
+              <div class="sg-color">
+                <div class="sg-color-swatch color-primary"></div>
+                <div class="sg-color-name">$brand-primary</div>
+                <div class="sg-color-value">#0b2940</div>
+                <div>(.color-primary)</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch color-primary-dark"></div>
+                <div class="sg-color-name">$brand-primary-dark</div>
+                <div class="sg-color-value">#092134</div>
+                <div>(.color-primary-dark)</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch color-primary-light"></div>
+                <div class="sg-color-name">$brand-primary-light</div>
+                <div class="sg-color-value">#244a65</div>
+                <div>(.color-primary-light)</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch color-primary-lighter"></div>
+                <div class="sg-color-name">$brand-primary-lighter</div>
+                <div class="sg-color-value">#336a90</div>
+                <div>(.color-primary-lighter)</div>
+              </div>
             </div>
-          </div>
 
-          <!-- #NAV - BREDACRUMBS -->
-          <div class="col-lg-6">
-            <h2 id="nav-breadcrumbs">Breadcrumbs</h2>
-            <div class="bs-component">
-              <ul class="breadcrumb">
-                <li class="active">Home</li>
-              </ul>
+            <h3>Grays</h3>
+            <div class="sg-color-grid">
+              <div class="sg-color">
+                <div class="sg-color-swatch color-gray"></div>
+                <div class="sg-color-name">$gray</div>
+                <div class="sg-color-value">#555555</div>
+                <div>(.color-gray)</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch color-gray-dark"></div>
+                <div class="sg-color-name">$gray-dark</div>
+                <div class="sg-color-value">#333333</div>
+                <div>(.color-gray-dark)</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch color-gray-darker"></div>
+                <div class="sg-color-name">$gray-darker</div>
+                <div class="sg-color-value">#555555</div>
+                <div>(.color-gray-darker)</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch color-gray-light"></div>
+                <div class="sg-color-name">$gray-light</div>
+                <div class="sg-color-value">#777777</div>
+                <div>(.color-gray-light)</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch color-gray-lighter"></div>
+                <div class="sg-color-name">$gray-lighter</div>
+                <div class="sg-color-value">#eeeeee</div>
+                <div>(.color-gray-lighter)</div>
+              </div>
+            </div>
 
-              <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li class="active">Library</li>
-              </ul>
-
-              <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Library</a></li>
-                <li class="active">Data</li>
-              </ul>
+            <h3>Alert</h3>
+            <div class="sg-color-grid">
+              <div class="sg-color">
+                <div class="sg-color-swatch color-alert-success"></div>
+                <div class="sg-color-name">$brand-success</div>
+                <div class="sg-color-value">#5cb85c</div>
+                <div>(.color-alert-success)</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch color-alert-info"></div>
+                <div class="sg-color-name">$brand-info</div>
+                <div class="sg-color-value">#5bc0de</div>
+                <div>(.color-alert-info)</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch color-alert-warning"></div>
+                <div class="sg-color-name">$brand-warning</div>
+                <div class="sg-color-value">#f0ad4e</div>
+                <div>(.color-alert-warning)</div>
+              </div>
+              <div class="sg-color">
+                <div class="sg-color-swatch color-alert-danger"></div>
+                <div class="sg-color-name">$brand-danger</div>
+                <div class="sg-color-value">#d9534f</div>
+                <div>(.color-alert-danger)</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </article>
+
+      <!-- FONTS -->
+      <article id="article-fonts" class="sg-container">
+        <div class="sg-info">
+          <div class="sg-font-stacks sg-section">
+            <h2 id="sg-fontStacks" class="sg-h2">Font Stacks</h2>
+            <dl class="sg-font-list">
+              <dt>Primary Font ($font-family-sans-serif | .font-primary):</dt>
+              <dd class="font-primary">"HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
+
+              <dt>Primary Font Italic ($font-family-sans-serif | .font-primary .italic):</dt>
+              <dd class="font-primary italic">"HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
+
+              <dt>Primary Font Bold ($font-family-sans-serif | .font-primary .bold):</dt>
+              <dd class="font-primary bold">"HelveticaNeue", Helvetica, Arial, sans-serif;</dd>
+
+              <dt>Secondary Font ($font-family-serif | .font-secondary):</dt>
+              <dd class="font-secondary">Georgia, Times, "Times New Roman", serif;</dd>
+
+              <dt>Secondary Font Italic ($font-family-serif | .font-secondary .italic):</dt>
+              <dd class="font-secondary italic">Georgia, Times, "Times New Roman", serif;</dd>
+
+              <dt>Secondary Font Bold ($font-family-serif | .font-secondary .bold):</dt>
+              <dd class="font-secondary bold">Georgia, Times, "Times New Roman", serif;</dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+      <!-- FONTS -->
+      <article id="article-headings" class="sg-container">
+        <div class="sg-info">
+          <div class="sg-headings sg-section">
+          <h2 id="sg-headings" class="sg-h2">Headings</h2>
+            <h1>Heading 1 with <small>small text</small> and a <a href="#">link</a></h1>          
+            <h2>Heading 2 with <small>small text</small> and a <a href="#">link</a></h2>
+            <h3>Heading 3 with <small>small text</small> and a <a href="#">link</a></h3>
+            <h4>Heading 4 with <small>small text</small> and a <a href="#">link</a></h4>
+            <h5>Heading 5 with <small>small text</small> and a <a href="#">link</a></h5>
+            <h6>Heading 6 with <small>small text</small> and a <a href="#">link</a></h6>
+          </div>
+        </div>
+      </article>
+
+      <!-- FONTS -->
+      <article id="article-fonts" class="sg-container">
+        <div class="sg-info">
+          <div class="sg-colors sg-section">
+            <h2 id="sg-colors" class="sg-h2">Fonts</h2>
+
+          </div>
+        </div>
+      </article>
     </section>
 
   <!-- START COMMON BOOTSTRAP JS -->

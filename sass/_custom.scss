@@ -1,7 +1,71 @@
 /*----CUSTOM---- */
-.test {
-	color:$brand-primary;
+/*----VARIABLES---- */
+.color-black {
+  	background-color: $black;
 }
-.test2 {
-	color:$brand-primary;
+.color-white {
+  	background-color: $white;
+}
+.color-gray {
+  	background-color: $gray;
+}
+.color-gray-dark {
+  	background-color: $gray-dark;
+}
+.color-gray-darker {
+  	background-color: $gray-darker;
+}
+.color-gray-light {
+  	background-color: $gray-light;
+}
+.color-gray-lighter {
+  	background-color: $gray-lighter;
+}
+.color-primary {
+  	background-color: $brand-primary;
+}
+.color-primary-dark {
+  	background-color: $brand-primary-dark;
+}
+.color-primary-light {
+  	background-color: $brand-primary-light;
+}
+.color-primary-lighter {
+  	background-color: $brand-primary-lighter;
+}
+.color-alert-success {
+  	background-color: $brand-success;
+}
+.color-alert-info {
+  	background-color: $brand-info;
+}
+.color-alert-warning {
+  	background-color: $brand-warning;
+}
+.color-alert-danger {
+  	background-color: $brand-danger;
+}
+
+.font-primary {
+  	font-family: $font-family-sans-serif;
+}
+.font-secondary {
+  	font-family: $font-family-serif;
+}
+.italic {
+	font-style: italic;
+}
+.bold {
+	font-weight: 800;
+}
+
+.border-1px {
+  	border: 1px solid $gray;
+}
+
+/*----LAYOUT---- */
+#mainWrapper {
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 90%;
 }
